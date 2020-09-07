@@ -14,6 +14,7 @@
 #include "ADC.h"
 #include "LCD.h"
 #include "RTC.h"
+#include "GPIO.h"
 
 typedef union 
 {
