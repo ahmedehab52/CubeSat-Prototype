@@ -321,7 +321,8 @@ void Read_telemetry(u8 *telemetry)
 void Emergency_mode(void)
 {
   /*Restart all subsystems*/
+		
    GPIO_u8_WritePinVal(3,0,'d');
-   DELAY_MS(300);
+   DELAY_MS(500);
    GPIO_u8_WritePinVal(3,1,'d');
 }
