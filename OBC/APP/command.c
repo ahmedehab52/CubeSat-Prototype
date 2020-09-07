@@ -304,5 +304,9 @@ void Read_telemetry(u8 *telemetry)
 
 void Emergency_mode(void)
 {
+	GPIO_u8_WritePinDir(4,1,'c');
+	GPIO_u8_WritePinDir(5,1,'c');
 	
+	GPIO_u8_WritePinVal(4,1,'c');
+	GPIO_u8_WritePinVal(5,1,'c');
 }
